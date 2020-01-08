@@ -1,0 +1,45 @@
+version: '3.1'
+services:
+  wordpress:
+    build:
+      context: ./docker/app
+    volumes:
+    - .:/var/www/html
+    - ./docker/mail:/var/fakesendemail
+    - ./docker/php.ini:/usr/local/etc/php/conf.d/project_settings.ini
+    - ./docker/fakesendmail.php:/usr/local/bin/fakesendmail.php
+    restart: always
+    ports:
+    - 8888:80
+    environment:
+      WORDPRESS_DB_PASSWORD: password
+      WORDPRESS_TABLE_PREFIX: wp_
+      WORDPRESS_DEBUG: 1
+    #      WORDPRESS_CONFIG_EXTRA: |
+    #        define('W3TC_DYNAMIC_SECURITY', 'w3tc_dynamic_part' );
+    #        define('W3TC_PRO', true);
+
+    links:
+    - mysql
+  mysql:
+    image: mysql:8.0.13
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+    - ./docker/db/db.sql:/docker-entrypoint-initdb.d/db.sql
+    restart: always
+    ports:
+    - 8889:3306
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_ROOT_PASSWORD: password
+
+  phpmyadmin:
+    depends_on:
+    - mysql
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+    - '8882:80'
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: password

@@ -1,0 +1,46 @@
+To: elikdermer@gmail.com
+Subject: [Comparisun] Your Site is Experiencing a Technical Issue
+Date: Fri, 13 Dec 2019 12:28:10 +0000
+From: WordPress <wordpress@localhost>
+Message-ID: <33adbc8e281beb3e3d1706d75dc47370@localhost>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Howdy!
+
+Since WordPress 5.2 there is a built-in feature that detects when a plugin or theme causes a fatal error on your site, and notifies you with this automated email.
+
+In this case, WordPress caught an error with your theme, Comparisun - NEW Clear theme.
+
+First, visit your website (http://localhost:8800/) and check for any visible issues. Next, visit the page where the error was caught (http://localhost:8800/wp-login.php) and check for any visible issues.
+
+Please contact your host for assistance with investigating this issue further.
+
+If your site appears broken and you can't access your dashboard normally, WordPress now has a special "recovery mode". This lets you safely login to your dashboard and investigate further.
+
+http://localhost:8800/wp-login.php?action=enter_recovery_mode&rm_token=PyxPMW9ipXPiDWByIQKVvc&rm_key=2rlfO2eRio68Wuyr2aIsEE
+
+To keep your site safe, this link will expire in 1 day. Don't worry about that, though: a new link will be emailed to you if the error occurs again after it expires.
+
+When seeking help with this issue, you may be asked for some of the following information:
+WordPress version 5.3
+Current theme: Comparisun - NEW Clear theme (version 1.0.0)
+Current plugin:  (version )
+PHP version 7.3.12
+
+
+
+Error Details
+=============
+An error of type E_ERROR was caused in line 57 of the file /var/www/html/wp-content/themes/comparisun-clear-theme/comparisun_tracking_pixel/pixel.php. Error message: Uncaught Error: Call to undefined function get_field() in /var/www/html/wp-content/themes/comparisun-clear-theme/comparisun_tracking_pixel/pixel.php:57
+Stack trace:
+#0 /var/www/html/wp-content/themes/comparisun-clear-theme/comparisun_tracking_pixel/pixel.php(67): checks_black_list_ips('172.18.0.1')
+#1 /var/www/html/wp-content/themes/comparisun-clear-theme/functions.php(55): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-settings.php(497): include('/var/www/html/w...')
+#3 /var/www/html/wp-config.php(104): require_once('/var/www/html/w...')
+#4 /var/www/html/wp-load.php(37): require_once('/var/www/html/w...')
+#5 /var/www/html/wp-login.php(12): require('/var/www/html/w...')
+#6 {main}
+  thrown
+

@@ -1,0 +1,24 @@
+To: markupus.sasha@gmail.com
+Subject: New WordPress Site
+Date: Wed, 8 Jan 2020 13:12:52 +0000
+From: WordPress <wordpress@localhost>
+Message-ID: <904fd1b1b60db88aeac6892a1a15e1d0@localhost>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Your new WordPress site has been successfully set up at:
+
+http://localhost:8888
+
+You can log in to the administrator account with the following information:
+
+Username: developer
+Password: The password you chose during installation.
+Log in here: http://localhost:8888/wp-login.php
+
+We hope you enjoy your new site. Thanks!
+
+--The WordPress Team
+https://wordpress.org/
+

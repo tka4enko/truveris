@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+docker-compose exec -T mysql /usr/bin/mysqldump -u root --password=password --skip-comments wordpress > docker/db/db.sql

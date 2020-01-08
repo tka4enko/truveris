@@ -1,0 +1,29 @@
+{#{% set child_active = 'current-page-ancestor' in child.classes or 'current-menu-item' in child.classes ? 'uk-active' : '' %}#}
+{#<ul class="uk-navbar uk-navbar-nav uk-visiuk-search-buttonble@m">#}
+    {#{% for item in site.menu.main.get_items %}#}
+        {#{% set item_active = 'current-page-ancestor' in item.classes or 'current-menu-item' in item.classes ? 'uk-active' : '' %}#}
+        {#<li class="{{ item_active }}">#}
+            {#<a href="{{ item.get_link }}"#}
+               {#class="{{ item.class }} {% if item.get_children %} uk-dropdown-toggler {% endif %}"#}
+               {#target="{{ item.is_external ? '_blank' : '_self' }}">#}
+                {#{{ item.title }}#}
+            {#</a>#}
+
+            {#{% if item.get_children %}#}
+                {#<div class="uk-dropdown" data-uk-dropdown="pos: bottom-center; mode: click;delay-hide:0;">#}
+                    {#<ul>#}
+                        {#{% for child in item.get_children %}#}
+                            {#{% if not 'button' in child.classes %}#}
+                                {#<li><a href="{{ child.get_link }}">{{ child.title }}</a></li>#}
+                            {#{% else %}#}
+                                {#<li class="uk-dropdown-button">#}
+                                    {#<a href="{{ child.get_link }}" class="uk-button uk-button-default">{{ child.title }}</a>#}
+                                {#</li>#}
+                            {#{% endif %}#}
+                        {#{% endfor %}#}
+                    {#</ul>#}
+                {#</div>#}
+            {#{% endif %}#}
+        {#</li>#}
+    {#{% endfor %}#}
+{#</ul>#}
