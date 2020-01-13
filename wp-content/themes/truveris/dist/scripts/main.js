@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9c58d7692474ad63e531"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5f8df8c322650ac6bbc0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -722,11 +722,30 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(16)(__webpack_require__.s = 16);
+/******/ 	return hotCreateRequire(2)(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ../node_modules/cache-loader/dist/cjs.js!../node_modules/css-loader?{"sourceMap":true}!../node_modules/postcss-loader/lib?{"config":{"path":"/Users/markupus/Projects/truveris/wp-content/themes/truveris/assets/build","ctx":{"open":true,"copy":"images/**_/*","proxyUrl":"http://localhost:3000","paths":{"root":"/Users/markupus/Projects/truveris/wp-content/themes/truveris","assets":"/Users/markupus/Projects/truveris/wp-content/themes/truveris/assets","dist":"/Users/markupus/Projects/truveris/wp-content/themes/truveris/dist"},"enabled":{"sourceMaps":true,"optimize":false,"cacheBusting":false,"watcher":true},"watch":[],"entry":{"main":["./scripts/main.js","./styles/main.scss"]},"publicPath":"/wp-content/theme/truveris/dist/","devUrl":"http://localhost:8888","env":{"production":false,"development":true},"manifest":{}}},"sourceMap":true}!../node_modules/resolve-url-loader?{"sourceMap":true}!../node_modules/sass-loader/lib/loader.js?{"sourceMap":true,"sourceComments":true}!../node_modules/import-glob!./styles/main.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ 19)(true);
+// imports
+
+
+// module
+exports.push([module.i, "/* line 1, modules/hero/hero.scss */\n\n.hero {\n  background-color: blue;\n  height: 100px;\n}\n\n/* line 3, stdin */\n\nbody {\n  background: green;\n  font-size: 20px;\n}\n\n", "", {"version":3,"sources":["/Users/markupus/Projects/truveris/wp-content/themes/truveris/assets/styles/main.scss","/Users/markupus/Projects/truveris/wp-content/themes/truveris/assets/styles/modules/hero/hero.scss","/Users/markupus/Projects/truveris/wp-content/themes/truveris/assets/styles/assets/styles/main.scss"],"names":[],"mappings":"AAAA,oCAAA;;ACAA;EACE,uBAAA;EACA,cAAA;CDGD;;AAAD,mBAAA;;AEHA;EACE,kBAAA;EACA,gBAAA;CFQD","file":"main.scss","sourcesContent":["/* line 1, modules/hero/hero.scss */\n.hero {\n  background-color: blue;\n  height: 100px; }\n\n/* line 3, stdin */\nbody {\n  background: green;\n  font-size: 20px; }\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9zdHlsZXMvbWFpbi5zY3NzIiwibW9kdWxlcy9pbmRleC5zY3NzIiwibW9kdWxlcy9oZXJvL2hlcm8uc2NzcyJdLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IFwiLi4vLi4vbW9kdWxlcy9pbmRleFwiO1xuXG5ib2R5IHtcbiAgYmFja2dyb3VuZDogZ3JlZW47XG4gIGZvbnQtc2l6ZTogMjBweDtcbn1cbiIsIkBpbXBvcnQgXCJoZXJvL2hlcm9cIjtcblxuIiwiLmhlcm8ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibHVlO1xuICBoZWlnaHQ6IDEwMHB4O1xufVxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUVBQSxBQUFBLEtBQUssQ0FBQztFQUNKLGdCQUFnQixFQUFFLElBQUk7RUFDdEIsTUFBTSxFQUFFLEtBQUssR0FDZDs7O0FGREQsQUFBQSxJQUFJLENBQUM7RUFDSCxVQUFVLEVBQUUsS0FBSztFQUNqQixTQUFTLEVBQUUsSUFBSSxHQUNoQiJ9 */",".hero {\n  background-color: blue;\n  height: 100px;\n}\n","@import \"../../modules/index\";\n\nbody {\n  background: green;\n  font-size: 20px;\n}\n"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 1 */
 /*!***********************************************************!*\
   !*** ../node_modules/html-entities/lib/html5-entities.js ***!
   \***********************************************************/
@@ -927,7 +946,21 @@ module.exports = Html5Entities;
 
 
 /***/ }),
-/* 1 */
+/* 2 */
+/*!****************************************************************************************!*\
+  !*** multi ./build/util/../helpers/hmr-client.js ./scripts/main.js ./styles/main.scss ***!
+  \****************************************************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! /Users/markupus/Projects/truveris/wp-content/themes/truveris/assets/build/util/../helpers/hmr-client.js */3);
+__webpack_require__(/*! ./scripts/main.js */17);
+module.exports = __webpack_require__(/*! ./styles/main.scss */18);
+
+
+/***/ }),
+/* 3 */
 /*!*************************************!*\
   !*** ./build/helpers/hmr-client.js ***!
   \*************************************/
@@ -935,7 +968,7 @@ module.exports = Html5Entities;
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hotMiddlewareScript = __webpack_require__(/*! webpack-hot-middleware/client?noInfo=true&timeout=20000&reload=true */ 2);
+var hotMiddlewareScript = __webpack_require__(/*! webpack-hot-middleware/client?noInfo=true&timeout=20000&reload=true */ 4);
 
 hotMiddlewareScript.subscribe(function (event) {
   if (event.action === 'reload') {
@@ -945,7 +978,7 @@ hotMiddlewareScript.subscribe(function (event) {
 
 
 /***/ }),
-/* 2 */
+/* 4 */
 /*!**********************************************************************************************!*\
   !*** ../node_modules/webpack-hot-middleware/client.js?noInfo=true&timeout=20000&reload=true ***!
   \**********************************************************************************************/
@@ -970,7 +1003,7 @@ var options = {
   ansiColors: {}
 };
 if (true) {
-  var querystring = __webpack_require__(/*! querystring */ 4);
+  var querystring = __webpack_require__(/*! querystring */ 6);
   var overrides = querystring.parse(__resourceQuery.slice(1));
   setOverrides(overrides);
 }
@@ -1111,11 +1144,11 @@ if (typeof window !== 'undefined') {
 }
 
 function createReporter() {
-  var strip = __webpack_require__(/*! strip-ansi */ 7);
+  var strip = __webpack_require__(/*! strip-ansi */ 9);
 
   var overlay;
   if (typeof document !== 'undefined' && options.overlay) {
-    overlay = __webpack_require__(/*! ./client-overlay */ 9)({
+    overlay = __webpack_require__(/*! ./client-overlay */ 11)({
       ansiColors: options.ansiColors,
       overlayStyles: options.overlayStyles
     });
@@ -1178,7 +1211,7 @@ function createReporter() {
   };
 }
 
-var processUpdate = __webpack_require__(/*! ./process-update */ 14);
+var processUpdate = __webpack_require__(/*! ./process-update */ 16);
 
 var customHandler;
 var subscribeAllHandler;
@@ -1249,10 +1282,10 @@ if (module) {
   };
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, "?noInfo=true&timeout=20000&reload=true", __webpack_require__(/*! ./../webpack/buildin/module.js */ 3)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, "?noInfo=true&timeout=20000&reload=true", __webpack_require__(/*! ./../webpack/buildin/module.js */ 5)(module)))
 
 /***/ }),
-/* 3 */
+/* 5 */
 /*!*************************************************!*\
   !*** ../node_modules/webpack/buildin/module.js ***!
   \*************************************************/
@@ -1285,7 +1318,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 4 */
+/* 6 */
 /*!************************************************!*\
   !*** ../node_modules/querystring-es3/index.js ***!
   \************************************************/
@@ -1296,12 +1329,12 @@ module.exports = function(module) {
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(/*! ./decode */ 5);
-exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ 6);
+exports.decode = exports.parse = __webpack_require__(/*! ./decode */ 7);
+exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ 8);
 
 
 /***/ }),
-/* 5 */
+/* 7 */
 /*!*************************************************!*\
   !*** ../node_modules/querystring-es3/decode.js ***!
   \*************************************************/
@@ -1397,7 +1430,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 6 */
+/* 8 */
 /*!*************************************************!*\
   !*** ../node_modules/querystring-es3/encode.js ***!
   \*************************************************/
@@ -1494,7 +1527,7 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 7 */
+/* 9 */
 /*!*******************************************!*\
   !*** ../node_modules/strip-ansi/index.js ***!
   \*******************************************/
@@ -1504,7 +1537,7 @@ var objectKeys = Object.keys || function (obj) {
 
 "use strict";
 
-var ansiRegex = __webpack_require__(/*! ansi-regex */ 8)();
+var ansiRegex = __webpack_require__(/*! ansi-regex */ 10)();
 
 module.exports = function (str) {
 	return typeof str === 'string' ? str.replace(ansiRegex, '') : str;
@@ -1512,7 +1545,7 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 8 */
+/* 10 */
 /*!*******************************************!*\
   !*** ../node_modules/ansi-regex/index.js ***!
   \*******************************************/
@@ -1528,7 +1561,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 9 */
+/* 11 */
 /*!****************************************************************!*\
   !*** ../node_modules/webpack-hot-middleware/client-overlay.js ***!
   \****************************************************************/
@@ -1559,7 +1592,7 @@ var styles = {
   textAlign: 'left'
 };
 
-var ansiHTML = __webpack_require__(/*! ansi-html */ 10);
+var ansiHTML = __webpack_require__(/*! ansi-html */ 12);
 var colors = {
   reset: ['transparent', 'transparent'],
   black: '181818',
@@ -1573,7 +1606,7 @@ var colors = {
   darkgrey: '6D7891'
 };
 
-var Entities = __webpack_require__(/*! html-entities */ 11).AllHtmlEntities;
+var Entities = __webpack_require__(/*! html-entities */ 13).AllHtmlEntities;
 var entities = new Entities();
 
 function showProblems(type, lines) {
@@ -1636,7 +1669,7 @@ module.exports.showProblems = showProblems;
 
 
 /***/ }),
-/* 10 */
+/* 12 */
 /*!******************************************!*\
   !*** ../node_modules/ansi-html/index.js ***!
   \******************************************/
@@ -1824,7 +1857,7 @@ ansiHTML.reset()
 
 
 /***/ }),
-/* 11 */
+/* 13 */
 /*!**********************************************!*\
   !*** ../node_modules/html-entities/index.js ***!
   \**********************************************/
@@ -1833,15 +1866,15 @@ ansiHTML.reset()
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
-  XmlEntities: __webpack_require__(/*! ./lib/xml-entities.js */ 12),
-  Html4Entities: __webpack_require__(/*! ./lib/html4-entities.js */ 13),
-  Html5Entities: __webpack_require__(/*! ./lib/html5-entities.js */ 0),
-  AllHtmlEntities: __webpack_require__(/*! ./lib/html5-entities.js */ 0)
+  XmlEntities: __webpack_require__(/*! ./lib/xml-entities.js */ 14),
+  Html4Entities: __webpack_require__(/*! ./lib/html4-entities.js */ 15),
+  Html5Entities: __webpack_require__(/*! ./lib/html5-entities.js */ 1),
+  AllHtmlEntities: __webpack_require__(/*! ./lib/html5-entities.js */ 1)
 };
 
 
 /***/ }),
-/* 12 */
+/* 14 */
 /*!*********************************************************!*\
   !*** ../node_modules/html-entities/lib/xml-entities.js ***!
   \*********************************************************/
@@ -2007,7 +2040,7 @@ module.exports = XmlEntities;
 
 
 /***/ }),
-/* 13 */
+/* 15 */
 /*!***********************************************************!*\
   !*** ../node_modules/html-entities/lib/html4-entities.js ***!
   \***********************************************************/
@@ -2165,7 +2198,7 @@ module.exports = Html4Entities;
 
 
 /***/ }),
-/* 14 */
+/* 16 */
 /*!****************************************************************!*\
   !*** ../node_modules/webpack-hot-middleware/process-update.js ***!
   \****************************************************************/
@@ -2322,39 +2355,6 @@ module.exports = function(hash, moduleMap, options) {
 
 
 /***/ }),
-/* 15 */
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ../node_modules/cache-loader/dist/cjs.js!../node_modules/css-loader?{"sourceMap":true}!../node_modules/postcss-loader/lib?{"config":{"path":"/Users/markupus/Projects/truveris/wp-content/themes/truveris/assets/build","ctx":{"open":true,"copy":"images/**_/*","proxyUrl":"http://localhost:3000","cacheBusting":"[name]_[hash]","paths":{"root":"/Users/markupus/Projects/truveris/wp-content/themes/truveris","assets":"/Users/markupus/Projects/truveris/wp-content/themes/truveris/assets","dist":"/Users/markupus/Projects/truveris/wp-content/themes/truveris/dist"},"enabled":{"sourceMaps":true,"optimize":false,"cacheBusting":false,"watcher":true},"watch":["wp-content/theme/truveris/**_/*.php","wp-content/theme/truveris/views/**_/*.php"],"entry":{"main":["./scripts/main.js","./styles/main.scss"],"customizer":["./scripts/customizer.js"]},"publicPath":"/wp-content/theme/truveris/dist/","devUrl":"http://localhost:8888","env":{"production":false,"development":true},"manifest":{}}},"sourceMap":true}!../node_modules/resolve-url-loader?{"sourceMap":true}!../node_modules/sass-loader/lib/loader.js?{"sourceMap":true,"sourceComments":true}!../node_modules/import-glob!./styles/main.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ 19)(true);
-// imports
-
-
-// module
-exports.push([module.i, "/* line 1, stdin */\n\nbody {\n  background: red;\n}\n\n", "", {"version":3,"sources":["/Users/markupus/Projects/truveris/wp-content/themes/truveris/assets/styles/main.scss","/Users/markupus/Projects/truveris/wp-content/themes/truveris/assets/styles/assets/styles/main.scss"],"names":[],"mappings":"AAAA,mBAAA;;ACAA;EACE,gBAAA;CDGD","file":"main.scss","sourcesContent":["/* line 1, stdin */\nbody {\n  background: red; }\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9zdHlsZXMvbWFpbi5zY3NzIl0sInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICBiYWNrZ3JvdW5kOiByZWQ7XG59XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLEFBQUEsSUFBSSxDQUFDO0VBQ0gsVUFBVSxFQUFFLEdBQUcsR0FDaEIifQ== */","body {\n  background: red;\n}\n"],"sourceRoot":""}]);
-
-// exports
-
-
-/***/ }),
-/* 16 */
-/*!****************************************************************************************!*\
-  !*** multi ./build/util/../helpers/hmr-client.js ./scripts/main.js ./styles/main.scss ***!
-  \****************************************************************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! /Users/markupus/Projects/truveris/wp-content/themes/truveris/assets/build/util/../helpers/hmr-client.js */1);
-__webpack_require__(/*! ./scripts/main.js */17);
-module.exports = __webpack_require__(/*! ./styles/main.scss */18);
-
-
-/***/ }),
 /* 17 */
 /*!*************************!*\
   !*** ./scripts/main.js ***!
@@ -2363,6 +2363,7 @@ module.exports = __webpack_require__(/*! ./styles/main.scss */18);
 /*! all exports used */
 /***/ (function(module, exports) {
 
+console.log('ok');
 
 
 /***/ }),
@@ -2375,7 +2376,7 @@ module.exports = __webpack_require__(/*! ./styles/main.scss */18);
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../node_modules/cache-loader/dist/cjs.js!../../node_modules/css-loader??ref--4-3!../../node_modules/postcss-loader/lib??ref--4-4!../../node_modules/resolve-url-loader??ref--4-5!../../node_modules/sass-loader/lib/loader.js??ref--4-6!../../node_modules/import-glob!./main.scss */ 15);
+var content = __webpack_require__(/*! !../../node_modules/cache-loader/dist/cjs.js!../../node_modules/css-loader??ref--4-3!../../node_modules/postcss-loader/lib??ref--4-4!../../node_modules/resolve-url-loader??ref--4-5!../../node_modules/sass-loader/lib/loader.js??ref--4-6!../../node_modules/import-glob!./main.scss */ 0);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -2394,8 +2395,8 @@ var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyl
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../node_modules/cache-loader/dist/cjs.js!../../node_modules/css-loader??ref--4-3!../../node_modules/postcss-loader/lib??ref--4-4!../../node_modules/resolve-url-loader??ref--4-5!../../node_modules/sass-loader/lib/loader.js??ref--4-6!../../node_modules/import-glob!./main.scss */ 15, function() {
-		var newContent = __webpack_require__(/*! !../../node_modules/cache-loader/dist/cjs.js!../../node_modules/css-loader??ref--4-3!../../node_modules/postcss-loader/lib??ref--4-4!../../node_modules/resolve-url-loader??ref--4-5!../../node_modules/sass-loader/lib/loader.js??ref--4-6!../../node_modules/import-glob!./main.scss */ 15);
+	module.hot.accept(/*! !../../node_modules/cache-loader/dist/cjs.js!../../node_modules/css-loader??ref--4-3!../../node_modules/postcss-loader/lib??ref--4-4!../../node_modules/resolve-url-loader??ref--4-5!../../node_modules/sass-loader/lib/loader.js??ref--4-6!../../node_modules/import-glob!./main.scss */ 0, function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/cache-loader/dist/cjs.js!../../node_modules/css-loader??ref--4-3!../../node_modules/postcss-loader/lib??ref--4-4!../../node_modules/resolve-url-loader??ref--4-5!../../node_modules/sass-loader/lib/loader.js??ref--4-6!../../node_modules/import-glob!./main.scss */ 0);
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
