@@ -1,4 +1,5 @@
 <?php
+require_once 'IncludeComponentsFile.php';
 IncludeComponentsFile::includeFile();
 
 class CustomMultipageCrateFile {
@@ -36,7 +37,7 @@ class CustomMultipageCrateFile {
                                 $path = get_template_directory().'/modules/';
                                 $fileTwig = $path.'/'.$val['acf_fc_layout'].'/'.$val['acf_fc_layout'].'.twig';
                                 $fileJs = $path.'/'.$val['acf_fc_layout'].'/'.$val['acf_fc_layout'].'.js';
-                                $fileLess = $path.'/'.$val['acf_fc_layout'].'/'.$val['acf_fc_layout'].'.less';
+                                $fileLess = $path.'/'.$val['acf_fc_layout'].'/'.$val['acf_fc_layout'].'.scss';
                                 $filePHP = $path.'/'.$val['acf_fc_layout'].'/'.$val['acf_fc_layout'].'.php';
                                 if (!file_exists($path.$val['acf_fc_layout'])) {
                                     mkdir($path.$val['acf_fc_layout'], 0777, true);
@@ -73,6 +74,7 @@ if (class_exists('CustomMultipageCrateFile')){
 class CustomMultipagePlugin {
     private $pageID;
     function __construct($context= false){
+
 //        extends to timber custom functions get_global_options for global_option and get_menu_by_id for menu by id
         if (!is_admin()){
             $this->renderPage($context);
@@ -142,6 +144,6 @@ class CustomMultipagePlugin {
         $context['data'] = $this->getDataObjec($taxObject);
         $this->ViewHeader();
         $this->renderContent($context,$taxObject);
-//        $this->ViewFooter();
+        $this->ViewFooter();
     }
 }

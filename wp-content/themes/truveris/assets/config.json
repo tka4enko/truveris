@@ -11,7 +11,6 @@
   "publicPath": "/wp-content/theme/truveris",
   "devUrl": "http://localhost:8888",
   "proxyUrl": "http://localhost:3000",
-  "cacheBusting": "[name]_[hash:8]",
   "watch": [
     "wp-content/theme/truveris/**/*.php",
     "wp-content/theme/truveris/views/**/*.php"

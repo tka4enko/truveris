@@ -1,0 +1,55 @@
+{% set global = get_global_options() %}
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="grid grid-medium child-width-1-2 child-width-1-6@m" data-margin>
+        <div class="width-1-6@m">
+          <a class="logo" href="{{ global.site.url }}">
+            <img data-img="data-src:{{ global.site.theme.uri }}/assets/images/svg/logo-footer.svg"
+                 data-svg
+                 alt="logo"/>
+          </a>
+        </div>
+        <ul>
+          {% for item in global.menu.menu_footer.get_items %}
+            {% set item_active = 'current-page-ancestor' in item.classes or 'current-menu-item' in item.classes ? 'active' : '' %}
+            <li
+              class="{{ item_active }}">
+              {% if 'button' in item.classes %}
+                <div class="navbar-item">
+                  <a href="#"
+                     class="{{ item.class }} {% if item.get_children %} dropdown-toggler {% endif %}"
+                     target="{{ item.is_external ? '_blank' : '_self' }}"><span>{{ item.title }}</span></a>
+                </div>
+              {% else %}
+                <a href="#"
+                   class="{{ item.class }} {% if item.get_children %} dropdown-toggler {% endif %}"
+                   target="{{ item.is_external ? '_blank' : '_self' }}">
+                  <span>{{ item.title }}</span>
+                  {% if item.get_children %}
+                    <span class="nav-arrow">
+                                      <img data-svg data-src="{{ global.site.theme.uri }}/assets/images/svg/arrow.svg" alt="">
+                                    </span>
+                  {% endif %}
+                </a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        <ul>
+          {% for item in global.menu.menu_social.get_items %}
+            {% set item_active = 'current-page-ancestor' in item.classes or 'current-menu-item' in item.classes ? 'active' : '' %}
+            <li
+              class="{{ item_active }}">
+              <a href="#"
+                 class="{{ item.link }} {% if item.get_children %} dropdown-toggler {% endif %}"
+                 target="{{ item.is_external ? '_blank' : '_self' }}">
+                <span>{{ item.title }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

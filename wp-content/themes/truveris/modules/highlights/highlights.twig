@@ -1,0 +1,11 @@
+<section class="highlights">
+  <div class="container">
+    {% if data.highlights_group.posts %}
+      <div class="highlights-list">
+        {% for post in data.highlights_group.posts %}
+          {% include 'views/components/cards/card-'~data.highlights_group.variant~'.twig' %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>

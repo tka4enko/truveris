@@ -24,3 +24,31 @@ add_action('wp_enqueue_scripts', function () {
         wp_enqueue_script('comment-reply');
     }
 }, 100);
+
+add_action('after_setup_theme', function(){
+    register_nav_menus(
+        array(
+            'menu_primary' => __('Header Menu'),
+            'menu_footer' => __('Footer Menu'),
+            'menu_social' => __('Social Menu'),
+        )
+    );
+});
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title' 	=> 'Theme General Settings',
+        'menu_title'	=> 'Theme Settings',
+        'menu_slug' 	=> 'theme-general-settings',
+        'capability'	=> 'edit_posts',
+        'redirect'		=> false
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title' 	=> 'Theme Default Settings',
+        'menu_title'	=> 'Theme Default',
+        'parent_slug'	=> 'theme-general-settings',
+    ));
+
+}

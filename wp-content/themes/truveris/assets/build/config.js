@@ -5,11 +5,12 @@ const merge = require('webpack-merge');
 const desire = require('./util/desire');
 
 const userConfig = merge(desire(`${__dirname}/../config`), desire(`${__dirname}/../config-local`));
-
+console.log(userConfig);
 const isProduction = !!((argv.env && argv.env.production) || argv.p);
 const rootPath = (userConfig.paths && userConfig.paths.root)
   ? userConfig.paths.root
   : process.cwd();
+console.log(rootPath);
 const config = merge({
   open: true,
   copy: 'images/**/*',
