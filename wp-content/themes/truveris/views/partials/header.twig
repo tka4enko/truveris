@@ -1,0 +1,77 @@
+{% set global = get_global_options() %}
+{#{{ dump(global) }}#}
+<header class="header">
+  <div class="container">
+    <div class="header-nav">
+      <a class="logo" href="{{ global.site.url }}">
+{#        <img data-img="data-src:{{ global.site.theme.uri }}/assets/images/svg/logo.svg"#}
+{#             data-svg#}
+{#             alt="logo"/>#}
+      </a>
+      <nav class="navbar-wrapper navbar" data-navbar="mode: click">
+        <div class="navbar-right">
+          <ul class="navbar-nav">
+            {% for item in global.menu.menu_primary.get_items %}
+              {% set item_active = 'current-page-ancestor' in item.classes or 'current-menu-item' in item.classes ? 'active' : '' %}
+              <li
+                class="{{ item_active }}">
+                {% if 'button' in item.classes %}
+                  <div class="navbar-item">
+                    <a href="#"
+                       class="{{ item.class }} {% if item.get_children %} dropdown-toggler {% endif %}"
+                       target="{{ item.is_external ? '_blank' : '_self' }}"><span>{{ item.title }}</span></a>
+                  </div>
+                {% else %}
+                  <a href="#"
+                     class="{{ item.class }} {% if item.get_children %} dropdown-toggler {% endif %}"
+                     target="{{ item.is_external ? '_blank' : '_self' }}">
+                    <span>{{ item.title }}</span>
+                    {% if item.get_children %}
+                      <span class="nav-arrow">
+                                      <img data-svg data-src="{{ global.site.theme.uri }}/assets/images/svg/arrow.svg" alt="">
+                                    </span>
+                    {% endif %}
+                  </a>
+                {% endif %}
+                {% if item.get_children %}
+                  <div class="navbar-dropdown">
+                    <ul class="nav dropdown-nav" data-margin>
+                      {% for child in item.get_children %}
+                        <li
+                          class="{{ child_active }}">
+                          {% if child.url == '#' %}
+                            <h3 class="nav-title {% if child.get_children %} dropdown-toggler {% endif %}">
+                              {{ child.title }}
+                            </h3>
+                          {% else %}
+                            <a class="nav-title {{ child.class }} {% if child.get_children %} dropdown-toggler {% endif %}"
+                               href="{{ child.get_link }}" target="{{ child.is_external ? '_blank' : '_self' }}">
+                              <span>{{ child.title }}</span>
+                            </a>
+                          {% endif %}
+                          {% if child.get_children %}
+                            <ul class="nav dropdown-nav">
+                              {% for child in child.get_children %}
+                                {% set child_active = 'current-page-ancestor' in child.classes or 'current-menu-item' in child.classes ? 'active' : '' %}
+                                <li class="{{ child_active }}">
+                                  <a class="{{ child.class }}" href="{{ child.get_link }}"
+                                     target="{{ child.is_external ? '_blank' : '_self' }}"><span>{{ child.title }}</span></a>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          {% endif %}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+

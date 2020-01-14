@@ -1,0 +1,1 @@
+<?php function block_info(){}
